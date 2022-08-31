@@ -8,5 +8,7 @@ module.exports = {
   icon: './src/brand.svg',
   siteName: 'refmathew',
   siteUrl: 'https://refmathew.github.io',
-  titleTemplate: 'refmathew | %s'
+  titleTemplate: 'refmathew | %s',
+
+  outputDir: 'public'
 }
