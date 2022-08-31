@@ -9,6 +9,4 @@ module.exports = {
   siteName: 'refmathew',
   siteUrl: 'https://refmathew.github.io',
   titleTemplate: 'refmathew | %s',
-
-  outputDir: 'public'
 }
