@@ -1,8 +1,5 @@
 <template>
-  <div :class="[
-    'socials-wrapper',
-    { 'socials-animate': animate === true }
-  ]">
+  <div :class="['socials-wrapper', 'socials--intro---animate']">
     <nav class="socials">
       <div class="socials__line"></div>
       <div class="socials__links">
@@ -32,12 +29,4 @@
 
 
 <script>
-export default {
-  data() {
-    return {
-    }
-  },
-  props: ['animate'],
-
-}
 </script>

@@ -1,9 +1,9 @@
 <template>
   <div class="layout-default">
-    <logo :animate="animate" />
-    <page-title :page-title="getPageTitle()" />
-    <burger-menu :page-title="getPageTitle()" :animate="animate" />
-    <socials :animate="animate" />
+    <logo ref="logo"/>
+    <page-title :page-title="getPageTitle()"/>
+    <burger-menu :page-title="getPageTitle()"/>
+    <socials ref="socials"/>
     <index :links="this.$static.links" :page-title="getPageTitle()" :animate="animate" />
     <slot />
     <who-i-am :pageTitle="getPageTitle()" />
@@ -50,19 +50,17 @@ export default {
     WhatIveMade,
     Writings,
   },
-  data() {
-    return {
-      animate: false,
-      animationDur: 1600,
-    }
-  },
   methods: {
-    toggleAnimate() {
-      this.animate = true
+    animate(){
+      this.$refs.logo.$el.classList.remove("logo--intro---animate")
+      this.$refs.logo.$el.classList.remove("logo---animate")
+      this.$refs.socials.$el.classList.remove("socials--intro---animate")
+      this.$refs.socials.$el.classList.remove("socials---animate")
 
-      setTimeout(() => {
-        this.animate = false
-      }, this.animationDur)
+      setTimeout(()=>{
+        this.$refs.logo.$el.classList.add("logo---animate")
+        this.$refs.socials.$el.classList.add("socials---animate")
+      }, .005)
     },
     getPageTitle() {
       const path = this.$route.path
@@ -79,7 +77,7 @@ export default {
   },
   watch: {
     $route(to, from) {
-      this.toggleAnimate()
+      this.animate()
     }
   }
 }
