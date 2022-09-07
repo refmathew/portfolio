@@ -16,7 +16,6 @@
   }
 }
 
-
 .page-title{
   gap: 1.6rem;
   @include mix.flex(row-reverse, $align: center);
@@ -24,7 +23,6 @@
   @include mix.for-size(tablet){
     flex-direction: row;
   };
-
 
   &__line{
     background-color: var.$secondary;
@@ -42,6 +40,7 @@
 // =============================================================================
 // ===   Page Title Animation   ================================================
 // =============================================================================
+
 .page-title-animate--from-home{
   animation: page-title--animate--from-home forwards var.$ani-dur ease ;
   @include mix.for-size(tablet){

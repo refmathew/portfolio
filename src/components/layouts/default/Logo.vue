@@ -1,8 +1,5 @@
 <template>
-  <div :class="[
-    'logo-wrapper',
-    { 'logo-animate': animate === true }
-  ]">
+  <div :class="['logo-wrapper', 'logo--intro---animate']">
     <g-link to="/" class="logo">
       <div class="logo__line"></div>
       <span class="logo__itself">
@@ -15,6 +12,5 @@
 <script>
 export default {
   name: 'HeaderLogo',
-  props: ['animate'],
 }
 </script>
