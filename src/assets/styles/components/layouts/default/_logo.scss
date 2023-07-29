@@ -1,55 +1,55 @@
 @use '../../../abstracts/mixins' as mix;
 @use '../../../abstracts/var';
 
-.logo-wrapper{
-  z-index: 2;
-  display: inline-block;
-  position: fixed;
-  @include mix.clamped(top, 24, 47);
+.logo-wrapper {
+	z-index: 2;
+	display: inline-block;
+	position: fixed;
+	@include mix.clamped(top, 24, 47);
 }
 
-.logo{
-  @include mix.flex($align: center);
+.logo {
+	@include mix.flex($align: center);
 
-  &__line{
-    background-color: black;
-    @include mix.clamped(width, 50.49, 76.5);
-    @include mix.clamped(height, 6, 8);
-  }
+	&__line {
+		background-color: black;
+		@include mix.clamped(width, 50.49, 76.5);
+		@include mix.clamped(height, 2, 4);
+	}
 
-  &__itself{
-    margin-left: 1.6rem;
-    @include mix.font(var.$f-header, 21, 32, 700);
-  }
+	&__itself {
+		margin-left: 1.6rem;
+		@include mix.font(var.$f-header, 21, 32, 700);
+	}
 }
 
-.logo--intro---animate{
-  animation: logo--intro---animate var.$ani-dur ease forwards;
+.logo--intro---animate {
+	animation: logo--intro---animate var.$ani-dur ease forwards;
 }
-.logo---animate{
-  animation: logo---animate var.$ani-dur ease forwards;
+.logo---animate {
+	animation: logo---animate var.$ani-dur ease forwards;
 }
 
 @keyframes logo--intro---animate {
-  0%{
-    transform: translateX(-#{var.$ani-distance})
-  } 
-  50%{
-    transform: translateX(-#{var.$ani-distance})
-  } 
-  100%{
-    transform: translateX(0)
-  } 
+	0% {
+		transform: translateX(-#{var.$ani-distance});
+	}
+	50% {
+		transform: translateX(-#{var.$ani-distance});
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
 
 @keyframes logo---animate {
-  0%{
-    transform: translateX(0);
-  }
-  50%{
-    transform: translateX(-#{var.$ani-distance})
-  } 
-  100%{
-    transform: translateX(0)
-  } 
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(-#{var.$ani-distance});
+	}
+	100% {
+		transform: translateX(0);
+	}
 }

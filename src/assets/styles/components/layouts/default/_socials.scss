@@ -1,68 +1,66 @@
 @use '../../../abstracts/mixins' as mix;
 @use '../../../abstracts/var';
 
-.socials-wrapper{
-  bottom: 0;
-  display: inline-block;
-  position: fixed;
-  z-index: 2;
-  transform: translateY(var.$ani-distance);
-  @include mix.clamped(right, 18, 47);
+.socials-wrapper {
+	bottom: 0;
+	display: inline-block;
+	position: fixed;
+	z-index: 2;
+	transform: translateY(var.$ani-distance);
+	@include mix.clamped(right, 18, 47);
 }
 
-.socials{
-  gap: 1.6rem;
-  @include mix.flex(column-reverse, $align: center);
+.socials {
+	gap: 1.6rem;
+	@include mix.flex(column-reverse, $align: center);
 
-  &__line{
-    background-color: black;
-    @include mix.clamped(width, 6, 8);
-    @include mix.clamped(height, 73.26, 111);
-  }
+	&__line {
+		background-color: black;
+		@include mix.clamped(width, 2, 4);
+		@include mix.clamped(height, 64, 80);
+	}
 
-  &__links{
-    @include mix.font(var.$f-header, 21, 32, 700);
+	&__links {
+		@include mix.font(var.$f-header, 21, 32, 700);
 
-    gap: .8rem;
-    @include mix.flex($dir: column);
+		gap: 0.8rem;
+		@include mix.flex($dir: column);
+	}
 
-  }
-
-  &__links__link{
-    img{
-      @include mix.clamped(height, 24, 32);
-      @include mix.clamped(width, 24, 32);
-    }
-  }
+	&__links__link {
+		img {
+			@include mix.clamped(height, 24, 32);
+			@include mix.clamped(width, 24, 32);
+		}
+	}
 }
 
-
-.socials--intro---animate{
-  animation: socials--intro---animate var.$ani-dur ease forwards;
+.socials--intro---animate {
+	animation: socials--intro---animate var.$ani-dur ease forwards;
 }
-.socials---animate{
-  animation: socials---animate var.$ani-dur ease forwards;
+.socials---animate {
+	animation: socials---animate var.$ani-dur ease forwards;
 }
 
 @keyframes socials--intro---animate {
-  0%{
-    transform: translateY(var.$ani-distance)
-  } 
-  50%{
-    transform: translateY(var.$ani-distance)
-  } 
-  100%{
-    transform: translateY(0)
-  } 
+	0% {
+		transform: translateY(var.$ani-distance);
+	}
+	50% {
+		transform: translateY(var.$ani-distance);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 @keyframes socials---animate {
-  0%{
-    transform: translateY(0)
-  } 
-  50%{
-    transform: translateY(var.$ani-distance)
-  } 
-  100%{
-    transform: translateY(0)
-  } 
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(var.$ani-distance);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }

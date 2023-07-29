@@ -1,17 +1,22 @@
 [
-  { 
-    "name": "email",
-    "iconName": "logo-email", 
-    "url": "mailto:reformamathew@pm.me"
-  },
-  { 
-    "name": "github",
-    "iconName": "logo-github", 
-    "url": "https://github.com/rmathewjf"
-  },
-  { 
-    "name": "linkedin",
-    "iconName": "logo-linkedin", 
-    "url": "https://www.linkedin.com/in/refmathew"
-  }
+	{
+		"name": "email",
+		"iconName": "logo-email",
+		"url": "mailto:reformamathew@pm.me"
+	},
+	{
+		"name": "github",
+		"iconName": "logo-github",
+		"url": "https://github.com/refmathew"
+	},
+	{
+		"name": "gitlab",
+		"iconName": "logo-gitlab",
+		"url": "https://gitlab.com/refmathew"
+	},
+	{
+		"name": "linkedin",
+		"iconName": "logo-linkedin",
+		"url": "https://www.linkedin.com/in/refmathew"
+	}
 ]
