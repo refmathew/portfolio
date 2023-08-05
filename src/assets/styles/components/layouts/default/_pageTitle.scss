@@ -2,6 +2,7 @@
 @use '../../../abstracts/var';
 
 .page-title-wrapper {
+	display: none;
 	position: fixed;
 	right: 0;
 	top: 7.4rem;
@@ -26,14 +27,15 @@
 
 	&__line {
 		background-color: var.$secondary;
-		@include mix.clamped(height, 2, 4);
+		@include mix.clamped(height, 1, 2);
 		@include mix.clamped(width, 96, 96);
 	}
 
 	&__itself {
 		text-align: right;
 		@include mix.header-font();
-		@include mix.clamped(font-size, 32, 40);
+		@include mix.clamped(font-size, 21, 32);
+		font-weight: 400;
 	}
 }
 

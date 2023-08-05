@@ -14,7 +14,7 @@
 	&__line {
 		background-color: black;
 		@include mix.clamped(width, 50.49, 76.5);
-		@include mix.clamped(height, 2, 4);
+		@include mix.clamped(height, 1, 2);
 	}
 
 	&__itself {
