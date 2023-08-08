@@ -10,15 +10,15 @@
 
 .logo {
 	@include mix.flex($align: center);
+	@include mix.clamped(gap, 8, 16);
 
 	&__line {
 		background-color: black;
 		@include mix.clamped(width, 50.49, 76.5);
-		@include mix.clamped(height, 1, 2);
+		@include mix.clamped(height, 4, 8);
 	}
 
 	&__itself {
-		margin-left: 1.6rem;
 		@include mix.font(var.$f-header, 21, 32, 700);
 	}
 }

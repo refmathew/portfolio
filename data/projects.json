@@ -1,18 +1,70 @@
 [
-  {
-    "name": "Rmmbr",
-    "desc": "",
-    "img": "rmmbr",
-    "stack": ["vue", "vuex", "vue-router", "mongodb", "express", "node", "sass"],
-    "link": "https://github.com/rmathewjf/rmmbr",
-    "completed": true
-  },
-  {
-    "name": "Portfolio",
-    "desc": "",
-    "img": "portfolio",
-    "stack": ["gridsome", "sass"],
-    "link": "https://rmathewjf.github.io",
-    "completed": true
-  }
+	{
+		"name": "Portfolio Revamp",
+		"link": "",
+		"imgNames": [
+			"project-portfolio-revamp-1",
+			"project-portfolio-revamp-2",
+			"project-portfolio-revamp-3"
+		],
+		"responsibilities": "Web design",
+		"techStack": "Figma",
+		"description": "I realized there are a lot of things to improve with the current design of this portfolio so I started doing a redesign while still keeping some aspects of this current one. I fell quite in love with neubrutalism at the time so I took it as an inspiration. The development is going to happen soon."
+	},
+	{
+		"name": "Glanced Web Studio",
+		"link": "",
+		"imgNames": ["project-glanced-1", "project-glanced-2"],
+		"responsibilities": "Web design and development",
+		"techStack": "Nuxt, Vue, Tailwind, Sass",
+		"description": "This is a web studio I will one day start up."
+	},
+	{
+		"name": "Student Violation Record App",
+		"link": "https://github.com/refmathew/student-violation-management-system",
+		"imgNames": ["project-student-violation-record-system"],
+		"responsibilities": "Desktop App design and development",
+		"techStack": "Quasar, Vue, Sass, Node, Express, Sqlite",
+		"description": "My college had an outdated system of collecting violations committed by the students. The program was created to address the issues(e.g., security, privacy, searching, transcription) that come with using a paper-based system."
+	},
+	{
+		"name": "Rmmbr",
+		"link": "https://github.com/rmathewjf/rmmbr",
+		"imgNames": ["project-rmmbr"],
+		"responsibilities": "Web design and development",
+		"techStack": "Vue, Sass, Node, Express, MongoDB",
+		"description": "My first MEVN project."
+	},
+	{
+		"name": "CSTC",
+		"link": "",
+		"imgNames": ["project-cstc"],
+		"responsibilities": "Graphic Design",
+		"techStack": "Figma",
+		"description": "My sibling asked me to create a social media graphic for her school."
+	},
+	{
+		"name": "Backtracker",
+		"link": "https://github.com/refmathew/backtracker",
+		"imgNames": ["project-backtracker"],
+		"responsibilities": "Web design and development",
+		"techStack": "PHP, Javascript, Sass",
+		"description": "A school project."
+	},
+	{
+		"name": "Some College App",
+		"link": "https://github.com/refmathew/college-student-data-repository",
+		"imgNames": ["project-college-app"],
+		"responsibilities": "Web design and development",
+		"techStack": "PHP, Javascript, Sass",
+		"description": "A school project."
+	},
+	{
+		"name": "Philhealth Revamp",
+		"link": "",
+		"imgNames": ["project-philhealth-revamp"],
+		"responsibilities": "Web design",
+		"techStack": "Figma",
+		"description": "I thought Philhealth's website looked a bit outdated so I did a redesign of it."
+	}
 ]

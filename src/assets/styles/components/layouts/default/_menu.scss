@@ -6,8 +6,6 @@
 	position: fixed;
 	visibility: hidden;
 	z-index: 2;
-	@include mix.clamped(right, 18, 47);
-	@include mix.clamped(top, 30, 55);
 }
 
 .menu {

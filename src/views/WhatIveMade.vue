@@ -1,24 +1,14 @@
-<template>
-  <div class="page page--what-ive-made" v-show="pageTitle === 'What I\'ve Made'">
-    <custom-section class="section--works" :isLastCustomSection="false" section-heading="Works"
-      :showcase-items="this.$static.works.edges" showcase-item-type="work" />
-    <custom-section class="section--projects" :isLastCustomSection="true" section-heading="Personal Projects"
-      :showcase-items="this.$static.projects.edges" showcase-item-type="project" />
-  </div>
-</template>
-
-
 <static-query>
 query{ 
-  works: allWork{
+  works: allWork(order: ASC){
     edges {
       node{ 
         name
-        desc
-        img
-        stack
-        link
-        completed
+				link
+				imgNames
+				responsibilities
+				techStack
+				description
       }
     } 
   }
@@ -26,23 +16,47 @@ query{
     edges {
       node{ 
         name
-        desc
-        img
-        stack
-        link
-        completed
+				link
+				imgNames
+				responsibilities
+				techStack
+				description
       }
     } 
   }
 }
 </static-query>
 
-
 <script>
-import CustomSection from '../components/views/whatIveMade/CustomSection.vue'
+import CustomSection from "../components/views/whatIveMade/CustomSection.vue";
+import Projects from "../components/views/whatIveMade/Projects.vue";
 
 export default {
-  components: { CustomSection, },
-  props: ['pageTitle',],
-}
+	components: { CustomSection, Projects },
+	props: ["pageTitle"],
+};
 </script>
+
+<template>
+	<div
+		class="page page--what-ive-made"
+		v-show="pageTitle === 'What I\'ve Made'"
+	>
+		<Projects heading="Work" :projects="this.$static.works.edges" />
+		<Projects
+			class="projects-section"
+			heading="Projects"
+			:projects="this.$static.projects.edges"
+		/>
+	</div>
+</template>
+
+<style lang="scss" scoped>
+@use "~/assets/styles/abstracts/mixins" as *;
+
+.projects-section {
+	@include for-size(desktop) {
+		margin-top: -25.6rem;
+	}
+}
+</style>

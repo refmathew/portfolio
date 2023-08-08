@@ -1,10 +1,34 @@
 [
-  {
-    "name": "Car Center",
-    "desc": "",
-    "img": "car-center",
-    "stack": ["gridsome", "sass"],
-    "link": "https://car-center.netlify.app",
-    "completed": true
-  }
+	{
+		"name": "Daniel Scanlon Portfolio",
+		"link": "https://scanlon-portfolio.netlify.app",
+		"imgNames": ["work-daniel-scanlon-portfolio"],
+		"responsibilities": "Web design and development",
+		"techStack": "Nuxt, Vue, Sass",
+		"description": "A web development portfolio of my previous client. The client wanted a flashy website with a lot of animations but remain conventional with the layout so as to not confuse his target market."
+	},
+	{
+		"name": "Car Center Website",
+		"link": "https://car-center.netlify.app",
+		"imgNames": ["work-car-center"],
+		"responsibilities": "Web design and development",
+		"techStack": "Gridsome, Vue, Sass",
+		"description": "A car center website project for an outsourcer's client."
+	},
+	{
+		"name": "BSP Mobile App Concept",
+		"link": "",
+		"imgNames": ["work-bsp-1", "work-bsp-2"],
+		"responsibilities": "Mobile App design",
+		"techStack": "Figma",
+		"description": "Someone from college asked me to create a design of their concept of a mobile app for the Philippines' central bank."
+	},
+	{
+		"name": "Blog Section Redesign",
+		"link": "",
+		"imgNames": ["work-eliteminds-1", "work-eliteminds-2"],
+		"responsibilities": "Web design",
+		"techStack": "Figma",
+		"description": "A blog section redesign of an upwork client's website."
+	}
 ]
