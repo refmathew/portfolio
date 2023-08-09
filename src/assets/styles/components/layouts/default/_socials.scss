@@ -34,33 +34,3 @@
 		}
 	}
 }
-
-.socials--intro---animate {
-	animation: socials--intro---animate var.$ani-dur ease forwards;
-}
-.socials---animate {
-	animation: socials---animate var.$ani-dur ease forwards;
-}
-
-@keyframes socials--intro---animate {
-	0% {
-		transform: translateY(var.$ani-distance);
-	}
-	50% {
-		transform: translateY(var.$ani-distance);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}
-@keyframes socials---animate {
-	0% {
-		transform: translateY(0);
-	}
-	50% {
-		transform: translateY(var.$ani-distance);
-	}
-	100% {
-		transform: translateY(0);
-	}
-}

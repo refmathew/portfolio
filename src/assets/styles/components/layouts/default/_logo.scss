@@ -22,34 +22,3 @@
 		@include mix.font(var.$f-header, 21, 32, 700);
 	}
 }
-
-.logo--intro---animate {
-	animation: logo--intro---animate var.$ani-dur ease forwards;
-}
-.logo---animate {
-	animation: logo---animate var.$ani-dur ease forwards;
-}
-
-@keyframes logo--intro---animate {
-	0% {
-		transform: translateX(-#{var.$ani-distance});
-	}
-	50% {
-		transform: translateX(-#{var.$ani-distance});
-	}
-	100% {
-		transform: translateX(0);
-	}
-}
-
-@keyframes logo---animate {
-	0% {
-		transform: translateX(0);
-	}
-	50% {
-		transform: translateX(-#{var.$ani-distance});
-	}
-	100% {
-		transform: translateX(0);
-	}
-}

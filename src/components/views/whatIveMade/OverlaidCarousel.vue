@@ -1,6 +1,7 @@
 <script>
 import { useGlobalStore } from "../../../stores/global-store";
-import { Carousel, Slide } from "vue-carousel";
+// import { Carousel, Slide } from "vue-carousel";
+import VueCarousel from "vue-carousel/src/index";
 export default {
 	setup() {
 		const global = useGlobalStore();
@@ -15,9 +16,16 @@ export default {
 		},
 	},
 	components: {
-		Carousel,
-		Slide,
+		Carousel: () =>
+			import("vue-carousel/src/index")
+				.then((m) => m.Carousel)
+				.catch(),
+		Slide: () =>
+			import("vue-carousel/src/index")
+				.then((m) => m.Slide)
+				.catch(),
 	},
+	mounted() {},
 };
 </script>
 
@@ -44,23 +52,26 @@ export default {
 		<div class="overlay__project-name" v-else>
 			{{ global.carouselProjectName }}
 		</div>
-		<Carousel
-			class="overlay__carousel"
-			per-page="1"
-			pagination-color="#000000"
-			pagination-active-color="#e9eaed"
-			pagination-padding="4"
-		>
-			<Slide
-				class="overlay__carousel-item"
-				v-for="imageName in global.carouselImageNames"
+		<ClientOnly>
+			<Carousel
+				class="overlay__carousel"
+				ref="carousel"
+				per-page="1"
+				pagination-color="#000000"
+				pagination-active-color="#e9eaed"
+				pagination-padding="4"
 			>
-				<g-image
-					class="overlay__carousel-item-img"
-					:src="require(`~/assets/img/${imageName}.jpg`)"
-				/>
-			</Slide>
-		</Carousel>
+				<Slide
+					class="overlay__carousel-item"
+					v-for="imageName in global.carouselImageNames"
+				>
+					<g-image
+						class="overlay__carousel-item-img"
+						:src="require(`~/assets/img/${imageName}.jpg`)"
+					/>
+				</Slide>
+			</Carousel>
+		</ClientOnly>
 		<button class="overlay__exit-button-wrapper" @click="handleExitClick">
 			<div class="overlay__exit-button">
 				<div />
