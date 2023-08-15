@@ -7,7 +7,7 @@
 			"project-portfolio-revamp-2",
 			"project-portfolio-revamp-3"
 		],
-		"responsibilities": "Web and Logo design",
+		"responsibilities": "Web, Logo design",
 		"techStack": "Figma",
 		"description": "A neubrutalism-themed iteration of this portfolio site."
 	},
@@ -15,7 +15,7 @@
 		"name": "Glanced Web Studio",
 		"link": "",
 		"imgNames": ["project-glanced-1", "project-glanced-2"],
-		"responsibilities": "Web design and development",
+		"responsibilities": "Web development | Web design",
 		"techStack": "Nuxt, Vue, Tailwind, Sass",
 		"description": "A web studio I will start up one day."
 	},
@@ -23,7 +23,7 @@
 		"name": "Student Violation Record App",
 		"link": "https://github.com/refmathew/student-violation-management-system",
 		"imgNames": ["project-student-violation-record-system"],
-		"responsibilities": "Desktop App design and development",
+		"responsibilities": "Desktop app development | Desktop app design",
 		"techStack": "Quasar, Vue, Sass, Node, Express, Sqlite",
 		"description": "A program that addresses the issues(e.g., security, privacy, searching, transcription) that come with using a paper-based system like one of my college's."
 	},
@@ -31,9 +31,63 @@
 		"name": "Rmmbr: A Note Taking App",
 		"link": "https://github.com/rmathewjf/rmmbr",
 		"imgNames": ["project-rmmbr-1", "project-rmmbr-2"],
-		"responsibilities": "Web design and development, Logo design",
+		"responsibilities": "Web development | Web, Logo design",
 		"techStack": "Vue, Sass, Node, Express, MongoDB",
 		"description": "A note/todo application"
+	},
+	{
+		"name": "Backtracker",
+		"link": "https://github.com/refmathew/backtracker",
+		"imgNames": ["project-backtracker"],
+		"responsibilities": "Web development | Web, Logo design",
+		"techStack": "PHP, Javascript, Sass",
+		"description": "A school project."
+	},
+	{
+		"name": "A College App",
+		"link": "https://github.com/refmathew/college-student-data-repository",
+		"imgNames": ["project-college-app"],
+		"responsibilities": "Web development | Web, Logo design",
+		"techStack": "PHP, Javascript, Sass",
+		"description": "A school project."
+	},
+	{
+		"name": "PhilHealth Revamp",
+		"link": "",
+		"imgNames": ["project-philhealth-revamp"],
+		"responsibilities": "Web, Logo design",
+		"techStack": "Figma",
+		"description": "I thought PhilHealth's website looked a bit outdated so I did a redesign of it."
+	},
+	{
+		"name": "Echoshop",
+		"link": "",
+		"imgNames": [
+			"project-echoshop-1",
+			"project-echoshop-2",
+			"project-echoshop-3",
+			"project-echoshop-4",
+			"project-echoshop-5"
+		],
+		"responsibilities": "Graphic, Logo Design",
+		"techStack": "Photoshop, Illustrator",
+		"description": ""
+	},
+	{
+		"name": "Crust & Crunch",
+		"link": "",
+		"imgNames": ["project-crust-and-crunch-1", "project-crust-and-crunch-2"],
+		"responsibilities": "Graphic, Logo design",
+		"techStack": "Illustrator",
+		"description": ""
+	},
+	{
+		"name": "Sorawa",
+		"link": "",
+		"imgNames": ["project-sorawa-1", "project-sorawa-2", "project-sorawa-3"],
+		"responsibilities": "Graphic, Logo design",
+		"techStack": "Figma",
+		"description": ""
 	},
 	{
 		"name": "CSTC Social Media Graphic",
@@ -42,29 +96,5 @@
 		"responsibilities": "Graphic design",
 		"techStack": "Figma",
 		"description": "A social media graphic for a college."
-	},
-	{
-		"name": "Backtracker",
-		"link": "https://github.com/refmathew/backtracker",
-		"imgNames": ["project-backtracker"],
-		"responsibilities": "Web design and development, Logo design",
-		"techStack": "PHP, Javascript, Sass",
-		"description": "A school project."
-	},
-	{
-		"name": "A College App",
-		"link": "https://github.com/refmathew/college-student-data-repository",
-		"imgNames": ["project-college-app"],
-		"responsibilities": "Web design and development, Logo design",
-		"techStack": "PHP, Javascript, Sass",
-		"description": "A school project."
-	},
-	{
-		"name": "PhilHealth Revamp",
-		"link": "",
-		"imgNames": ["project-philhealth-revamp"],
-		"responsibilities": "Web design, Logo design",
-		"techStack": "Figma",
-		"description": "I thought PhilHealth's website looked a bit outdated so I did a redesign of it."
 	}
 ]

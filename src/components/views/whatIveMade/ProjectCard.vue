@@ -18,14 +18,15 @@ export default {
 			});
 		},
 	},
-	props: [
-		"projectName",
-		"projectLink",
-		"imageNames",
-		"responsibilities",
-		"techStack",
-		"description",
-	],
+	props: {
+		projectName: { type: String },
+		projectLink: { type: String },
+		imageNames: { type: Array },
+		responsibilities: { type: String },
+		techStack: { type: String },
+		description: { type: String },
+		shouldShowDesc: { type: Boolean, default: false },
+	},
 };
 </script>
 
@@ -47,7 +48,9 @@ export default {
 						<div class="card__text-subheading-techstack">{{ techStack }}</div>
 					</div>
 				</div>
-				<div class="card__text-description">{{ description }}</div>
+				<div class="card__text-description" v-if="shouldShowDesc">
+					{{ description }}
+				</div>
 			</div>
 		</div>
 	</div>
@@ -84,10 +87,12 @@ export default {
 
 	&__image {
 		width: 100%;
-		height: 20rem;
+		height: 70vw;
+		min-height: 24rem;
+		max-height: 36rem;
 		overflow: hidden;
 		@include for-size(tablet) {
-			height: 24rem;
+			height: 32vw;
 
 			img {
 				height: 100%;

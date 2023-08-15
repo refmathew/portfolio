@@ -2,7 +2,7 @@
 import ProjectCard from "./ProjectCard.vue";
 
 export default {
-	props: ["heading", "projects"],
+	props: ["heading", "projects", "shouldShowProjectDesc"],
 	components: { ProjectCard },
 };
 </script>
@@ -21,6 +21,7 @@ export default {
 					:responsibilities="project.node.responsibilities"
 					:tech-stack="project.node.techStack"
 					:description="project.node.description"
+					:should-show-desc="shouldShowProjectDesc"
 				/>
 			</div>
 		</div>
@@ -42,9 +43,9 @@ export default {
 	gap: 3.6rem;
 	width: 100%;
 	max-width: 144rem;
-	padding: 12.8rem 4rem 0;
+	padding: 12.8rem 4rem;
 	@include for-size(tablet) {
-		padding: 12.8rem 5.9rem 0;
+		padding: 12.8rem 5.9rem;
 	}
 	@include for-size(desktop) {
 		padding: 19.2rem 12.8rem;
