@@ -1,38 +1,3 @@
-<template>
-	<div class="layout-default">
-		<logo />
-		<page-title :page-title="getPageTitle()" />
-		<burger-menu :page-title="getPageTitle()" />
-		<socials />
-		<index
-			:links="this.$static.links"
-			:page-title="getPageTitle()"
-			:animate="animate"
-		/>
-		<slot />
-		<who-i-am :pageTitle="getPageTitle()" />
-		<what-ive-made :pageTitle="getPageTitle()" />
-		<writings :pageTitle="getPageTitle()" />
-	</div>
-</template>
-
-<static-query>
-  query {
-    metadata {
-      siteName
-    }
-
-    links: allLink(order: ASC){
-      edges{
-        node{
-          name
-          link
-        }
-      }
-    } 
-  }
-</static-query>
-
 <script>
 import Logo from "~/components/layouts/default/Logo";
 import PageTitle from "~/components/layouts/default/PageTitle";
@@ -70,3 +35,38 @@ export default {
 	},
 };
 </script>
+
+<template>
+	<div class="layout-default">
+		<logo />
+		<page-title :page-title="getPageTitle()" />
+		<burger-menu :page-title="getPageTitle()" />
+		<socials />
+		<index
+			:links="this.$static.links"
+			:page-title="getPageTitle()"
+			:animate="animate"
+		/>
+		<slot />
+		<who-i-am :pageTitle="getPageTitle()" />
+		<what-ive-made :pageTitle="getPageTitle()" />
+		<writings :pageTitle="getPageTitle()" />
+	</div>
+</template>
+
+<static-query>
+  query {
+    metadata {
+      siteName
+    }
+
+    links: allLink(order: ASC){
+      edges{
+        node{
+          name
+          link
+        }
+      }
+    } 
+  }
+</static-query>

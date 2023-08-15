@@ -41,6 +41,7 @@ export default {
 	<div
 		class="page page--what-ive-made"
 		v-show="pageTitle === 'What I\'ve Made'"
+		v-if="this.$route.path === '/what-ive-made'"
 	>
 		<Projects heading="Work" :projects="this.$static.works.edges" />
 		<Projects

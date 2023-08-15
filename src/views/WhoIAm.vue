@@ -2,6 +2,7 @@
 	<div
 		:class="['page', 'page--who-i-am', 'page--who-i-am--to']"
 		v-show="pageTitle === 'Who I Am'"
+		v-if="this.$route.path === '/who-i-am'"
 	>
 		<hero />
 		<custom-section
