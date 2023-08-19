@@ -8,8 +8,8 @@
 		"description": "A web development portfolio of my previous client. The client wanted a flashy website with a lot of animations but remain conventional with the layout so as to not confuse his target market."
 	},
 	{
-		"name": "Car Center Website",
-		"link": "https://car-center.netlify.app",
+		"name": "University Auto Care",
+		"link": "https://university-autocare.netlify.app",
 		"imgNames": ["work-car-center"],
 		"responsibilities": "Web development | Web design",
 		"techStack": "Gridsome, Vue, Sass",
