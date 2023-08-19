@@ -87,20 +87,17 @@ export default {
 
 	&__image {
 		width: 100%;
-		height: 70vw;
-		min-height: 24rem;
+		height: 32vw;
+		min-height: 20rem;
 		max-height: 36rem;
 		overflow: hidden;
 		@include for-size(tablet) {
 			height: 32vw;
-
-			img {
-				height: 100%;
-			}
 		}
 
 		img {
 			width: 100%;
+			height: 100%;
 			object-fit: cover;
 			transition: transform 0.3s ease-in-out;
 		}
